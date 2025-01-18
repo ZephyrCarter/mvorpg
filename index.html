@@ -16,23 +16,29 @@ Sectorciv decisions
   <h2>
 Movement (Clockwise)
 <hr>
-<p id="section1"></p>
+<p id="movement1"></p>
 <hr>
 Offspring Placer (Clockwise)
 <hr>
-<p id="section2"></p>
+<p id="offspring1"></p>
 <hr>
 Hunt (destroy tree) or Farm (Not destroy)
 <br>
 (Hunt = 1; Farm = 2;)
 <hr>
-<p id="section3"></p>
+<p id="hunt1"></p>
 <hr>
 War VS Mingle (Contact leading to attack or mingling)
 <br>
 (War = 1; Mingle= 2;)
 <hr>
-<p id="section4"></p>
+<p id="war1"></p>
+<hr>
+Kill Success (Group attacking Enemy, do they kill them?)
+<br>
+(Kill = 1; Failed kill = 2;)
+<hr>
+<p id="k1"></p>
 <hr>
   </h2>
 
@@ -41,22 +47,27 @@ War VS Mingle (Contact leading to attack or mingling)
 </h1>
   
 <script>
-document.getElementById("section1").innerHTML =
+document.getElementById("movement1").innerHTML =
 Math.floor(Math.random() * 8) + 1;
 
 
 
-document.getElementById("section2").innerHTML =
+document.getElementById("offspring1").innerHTML =
 Math.floor(Math.random() * 8) + 1;
 
 
 
-document.getElementById("section3").innerHTML =
+document.getElementById("hunt1").innerHTML =
 Math.floor(Math.random() * 2) + 1;
 
 
 
-document.getElementById("section4").innerHTML =
+document.getElementById("war1").innerHTML =
+Math.floor(Math.random() * 2) + 1;
+
+
+
+document.getElementById("k1").innerHTML =
 Math.floor(Math.random() * 2) + 1;
 </script>
 </body>
